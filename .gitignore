@@ -1,0 +1,9 @@
+.vscode/
+bin/
+include/
+lib/
+lib64/
+pip-selfcheck.json
+./src/blog/__pycache__/
+./src/picklebit/__pycache__/
+./src/picklebit/settings/__pycache__/
