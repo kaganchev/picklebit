@@ -8,7 +8,8 @@
         min-height: 100%;
     }
     body {
-        margin-bottom: 60px;
+        background-color: #F4F1F1;
+        margin-bottom: 40px;
         font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     }
     /* Set gray background color and 100% height */
@@ -19,22 +20,43 @@
     a:hover {
         color: black;
     }
+    h7 {
+        font-size: 10pt;
+        font-style: italic;
+    }
+
+    .content {
+        padding: 0 50px 0 50px;
+    }
     /* Set black background color, white text and some padding */
     .footer {
         position: absolute;
         bottom: 0;
         color: #000;
         width: 100%;
-        height: 60px; /* Set the fixed height of the footer here */
-        line-height: 60px; /* Vertically center the text there */
-        background-color: #f3f3f3;
+        height: 40px; /* Set the fixed height of the footer here */
+        line-height: 40px; /* Vertically center the text there */
+        font-size: 12px;
+
+    }
+    .sidenav {
+        height: 100%;
+        position: fixed;
+        background-color: #222;
+    }
+    .sidenav a {
+        color: #8C8C7B;
+    }
+
+    .post-container {
+        background-color: #FAF9F5;
+        padding: 10px;
     }
 
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 750px) {
     .sidenav {
-        height: auto;
-        padding: 15px;
+        position: static;
     }
     .row.content {
         height: auto;

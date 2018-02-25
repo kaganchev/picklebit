@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% block blog_content %}
-<div class="col-md-9">
+<div class="col content offset-sm-2">
 
     {% for post in object_list %}
     <br>
     <a href="{{ post.get_absolute_url }}"><h4>{{ post.title }}</h4></a>
     <h7><span class="glyphicon glyphicon-time"></span> Post by {{ post.author }}, {{ post.create_date }}.</h7>
-    <!--<h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>-->
-    <p> {{ post.text | safe | truncatewords:100 }}</p>
+    <br>
+    <div class="post-container container box shadow">
+                <!--<h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>-->
+        <p> {{ post.text | safe | truncatewords:100 }}</p>
+    </div>
     <br>
     {% endfor %}
     
