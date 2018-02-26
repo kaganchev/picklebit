@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block blog_content %}
+<div class="col content offset-md-2">
+    <br><br><br>
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-sm-4 ">
+            <div class="card container post-card border rounded">
+                <img class="card-img-top d-block mx-auto" src="{% static "images/prof-color.png" %}" style="height: 100px; width: 100px;">
+                <div class="card-body text-center">
+                    <h4>Kaloyan Ganchev</h4>
+                    <h7>Python/Django Developer</h7>
+                </div> 
+            <div class="card-footer text-center">
+                <a href="https://www.linkedin.com/in/kaloyan-ganchev-99a10473/" target="_blank"><img src="{% static "images/linkedin.png" %}"></a>
+                <a href="https://github.com/kaganchev" target="_blank"><img src="{% static "images/github.png" %}"></a>
+                <a href="mailto:k.ganchev1993@gmail.com" target="_blank"><img src="{% static "images/email.png" %}"></a>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-4 offset-sm-2">
+                <div class="card container post-card border rounded">
+                    <img class="card-img-top d-block mx-auto" src="{% static "images/prof-val.jpg" %}" style="height: 100px; width: 100px;">
+                    <div class="card-body text-center">
+                        <h4>Valeri Rangelov</h4>
+                        <h7>DevOps Engineer</h7>
+                    </div> 
+                    <div class="card-footer text-center">
+                        <a href="https://www.linkedin.com/in/valeri-rangelov/"><img src="{% static "images/linkedin.png" %}"></a>
+                        <img src="{% static "images/github.png" %}">
+                        <img src="{% static "images/email.png" %}">
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

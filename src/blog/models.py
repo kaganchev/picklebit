@@ -9,6 +9,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     title = models.CharField(max_length=255)
+    title_img = models.CharField(max_length=255, default="")
     create_date = models.DateField(auto_now_add=True, auto_now=False)
     modify_date = models.DateTimeField('date published')
     text = models.TextField()
