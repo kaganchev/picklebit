@@ -6,8 +6,7 @@
     {% for post in object_list %}
     <br>
     <div class="card container-fluid post-card border rounded">
-        <img class="card-img-top img-fluid" src="{% static "images/welcome.png" %}" alt="Card image cap">
-        {{STATIC_URL}}
+        <img class="card-img-top img-fluid" src="{% static "images/" %}{{post.title_img}}" alt="Card image cap">
         <div class="card-body">
             <a href="{{ post.get_absolute_url }}"><h4 class="card-title">{{ post.title }}</h4></a>
             <h7 class="card-subtitle"><span class="glyphicon glyphicon-time"></span> Post by {{ post.author }}, {{ post.create_date }}.</h7>
