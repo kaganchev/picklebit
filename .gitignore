@@ -5,7 +5,8 @@ include/
 lib/
 lib64/
 pip-selfcheck.json
-./src/blog/__pycache__/
-./src/picklebit/__pycache__/
-./src/picklebit/settings/__pycache__/
-./src/blog/migrations
+src/blog/__pycache__/
+src/picklebit/__pycache__/
+src/picklebit/settings/__pycache__/
+src/picklebit/settings/base.py
+src/blog/migrations
